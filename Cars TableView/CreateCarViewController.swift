@@ -32,6 +32,7 @@ class CreateCarViewController: UIViewController, UINavigationControllerDelegate 
         
         car.brand = name
         car.model = modelTextField.text
+        car.engine = engineTextField.text
             
         context.insert(car)
             
