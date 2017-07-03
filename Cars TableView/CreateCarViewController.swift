@@ -16,8 +16,6 @@ class CreateCarViewController: UIViewController, UINavigationControllerDelegate 
     @IBOutlet weak var engineTextField: UITextField!
     @IBOutlet weak var saveContextButton: UIButton!
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,7 +37,7 @@ class CreateCarViewController: UIViewController, UINavigationControllerDelegate 
             do {
                 try context.save()
             } catch {
-                print("could not save movie!")
+                print("could not save car object!")
             }
             
             self.navigationController?.popViewController(animated: true)
