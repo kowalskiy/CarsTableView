@@ -14,6 +14,7 @@
 		236141FC1F0AC20000556A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236141FB1F0AC20000556A38 /* Assets.xcassets */; };
 		236141FF1F0AC20000556A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236141FD1F0AC20000556A38 /* LaunchScreen.storyboard */; };
 		2361420B1F0AC93800556A38 /* CarDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361420A1F0AC93800556A38 /* CarDetailsCell.swift */; };
+		236142141F0AD29F00556A38 /* CreateCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236142131F0AD29F00556A38 /* CreateCarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		236141FE1F0AC20000556A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236142001F0AC20000556A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2361420A1F0AC93800556A38 /* CarDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsCell.swift; sourceTree = "<group>"; };
+		236142131F0AD29F00556A38 /* CreateCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		236141F01F0AC20000556A38 /* Cars TableView */ = {
 			isa = PBXGroup;
 			children = (
-				236141F11F0AC20000556A38 /* AppDelegate.swift */,
-				236141F31F0AC20000556A38 /* ViewController.swift */,
+				2361420C1F0ACE3900556A38 /* Model */,
+				2361420E1F0ACE4500556A38 /* View */,
+				2361420F1F0ACE4900556A38 /* Controller */,
+				236142101F0AD13000556A38 /* Others */,
+			);
+			path = "Cars TableView";
+			sourceTree = "<group>";
+		};
+		2361420C1F0ACE3900556A38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2361420E1F0ACE4500556A38 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				2361420A1F0AC93800556A38 /* CarDetailsCell.swift */,
 				236141F51F0AC20000556A38 /* Main.storyboard */,
-				236141FB1F0AC20000556A38 /* Assets.xcassets */,
 				236141FD1F0AC20000556A38 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2361420F1F0ACE4900556A38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				236142131F0AD29F00556A38 /* CreateCarViewController.swift */,
+				236141F31F0AC20000556A38 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		236142101F0AD13000556A38 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				236141F11F0AC20000556A38 /* AppDelegate.swift */,
+				236141FB1F0AC20000556A38 /* Assets.xcassets */,
 				236142001F0AC20000556A38 /* Info.plist */,
 				236141F81F0AC20000556A38 /* Cars_TableView.xcdatamodeld */,
 			);
-			path = "Cars TableView";
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236142141F0AD29F00556A38 /* CreateCarViewController.swift in Sources */,
 				236141FA1F0AC20000556A38 /* Cars_TableView.xcdatamodeld in Sources */,
 				236141F41F0AC20000556A38 /* ViewController.swift in Sources */,
 				236141F21F0AC20000556A38 /* AppDelegate.swift in Sources */,

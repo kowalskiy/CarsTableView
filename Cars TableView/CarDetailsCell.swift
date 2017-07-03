@@ -17,7 +17,12 @@ class CarDetailsCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         }
+    
+    func configureCell(car: Car) {
+        brandLabel.text = car.brand
+        modelLabel.text = car.model
+        engineSizeLabel.text = car.engine
+    }
 }
 
