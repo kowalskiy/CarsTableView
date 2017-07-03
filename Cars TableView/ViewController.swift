@@ -8,18 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+@IBOutlet weak var tableView: UITableView!
+    
+    let myDataArray: [String] = ["First Row", "Second Row", "Third Row", "Fourth Row", "Fifth Row"]
+    let colors = [UIColor.blue, UIColor.yellow, UIColor.magenta, UIColor.red, UIColor.brown]
+    let cellReuseIdentifier = "Cell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    tableView.delegate = self
+    tableView.dataSource = self
+
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.myDataArray.count
     }
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell:CarDetailsCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CarDetailsCell
+        
+        cell.brandLabel.text = self.myDataArray[indexPath.row]
+        cell.ImageView?.backgroundColor = self.colors[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("you tapped cell number \(indexPath.row).")
+    }
 
 }
+
 

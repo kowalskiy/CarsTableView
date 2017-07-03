@@ -13,6 +13,7 @@
 		236141FA1F0AC20000556A38 /* Cars_TableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 236141F81F0AC20000556A38 /* Cars_TableView.xcdatamodeld */; };
 		236141FC1F0AC20000556A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236141FB1F0AC20000556A38 /* Assets.xcassets */; };
 		236141FF1F0AC20000556A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236141FD1F0AC20000556A38 /* LaunchScreen.storyboard */; };
+		2361420B1F0AC93800556A38 /* CarDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361420A1F0AC93800556A38 /* CarDetailsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		236141FB1F0AC20000556A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236141FE1F0AC20000556A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236142001F0AC20000556A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2361420A1F0AC93800556A38 /* CarDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				236141F11F0AC20000556A38 /* AppDelegate.swift */,
 				236141F31F0AC20000556A38 /* ViewController.swift */,
+				2361420A1F0AC93800556A38 /* CarDetailsCell.swift */,
 				236141F51F0AC20000556A38 /* Main.storyboard */,
 				236141FB1F0AC20000556A38 /* Assets.xcassets */,
 				236141FD1F0AC20000556A38 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				236141FA1F0AC20000556A38 /* Cars_TableView.xcdatamodeld in Sources */,
 				236141F41F0AC20000556A38 /* ViewController.swift in Sources */,
 				236141F21F0AC20000556A38 /* AppDelegate.swift in Sources */,
+				2361420B1F0AC93800556A38 /* CarDetailsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,7 @@
 				236142051F0AC20000556A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
